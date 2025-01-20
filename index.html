@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Pay Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Salary Pay Calculator</h1>
+        <form id="salaryForm">
+            <label for="basicPay">Basic Pay:</label>
+            <input type="number" id="basicPay" placeholder="Enter Basic Pay" required>
+
+            <label for="fitmentFactor">Fitment Factor:</label>
+            <input type="number" id="fitmentFactor" placeholder="Enter Fitment Factor" step="0.01" required>
+
+            <label for="da">DA (%):</label>
+            <input type="number" id="da" placeholder="Enter DA Percentage" step="0.01" required>
+
+            <label for="hra">HRA (%):</label>
+            <input type="number" id="hra" placeholder="Enter HRA Percentage" step="0.01" required>
+
+            <label for="ta">TA (%):</label>
+            <input type="number" id="ta" placeholder="Enter TA Percentage" step="0.01" required>
+
+            <button type="button" id="calculateBtn">Calculate Salary</button>
+        </form>
+
+        <div class="result">
+            <h2>Total Salary:</h2>
+            <p id="totalSalary">--</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
